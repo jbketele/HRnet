@@ -1,0 +1,129 @@
+/* Conteneur principal */
+.data-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Table */
+.data-table {
+    min-width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* En-tête */
+
+.data-table th {
+    padding: 8px 16px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Corps */
+
+.data-table tbody {
+    border: 1px solid black;
+    border-inline: none;
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.data-table td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tr:nth-child(odd) td:first-child {
+    background-color: #eaeaea;
+}
+
+.data-table tr:nth-child(even) td:first-child {
+    background-color: #f9f9f9;
+}
+
+/* Message "Aucune donnée disponible" */
+.data-table-empty {
+    text-align: center;
+    color: #999;
+    padding: 16px;
+}
+
+/* Colonnes triables */
+.sortable-column {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sortable-column:hover {
+    background-color: #f0f0f0;
+}
+
+.sort-indicator {
+    margin-left: 8px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.data-table-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pagination {
+    float: right;
+    text-align: right;
+    padding: 16px;
+}
+
+.pagination button {
+    background-color: #555;
+    color: white;
+    border: none;
+    margin-inline: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Nombre total d'entrées */
+.entries-info {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    float: left;
+}
+
+.search-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 16px;
+    gap: 8px;
+}
+
+#rowsPerPage {
+    margin-inline: 10px;
+}
+
+.data-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

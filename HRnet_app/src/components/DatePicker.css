@@ -1,0 +1,101 @@
+/* Conteneur principal */
+.custom-date-picker-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.custom-date-picker-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Calendrier personnalisé */
+.custom-calendar {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.custom-calendar .react-datepicker__day--selected {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+}
+
+.custom-calendar .react-datepicker__day:hover {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 50%;
+}
+
+.custom-calendar .react-datepicker__header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-calendar .react-datepicker__current-month {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-calendar .react-datepicker__day-name {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Dropdowns pour mois et année */
+.custom-calendar .react-datepicker__month-dropdown-container,
+.custom-calendar .react-datepicker__year-dropdown-container {
+    margin: 5px 0;
+}
+
+.custom-calendar .react-datepicker__month-dropdown,
+.custom-calendar .react-datepicker__year-dropdown {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.custom-calendar .react-datepicker__month-dropdown:hover,
+.custom-calendar .react-datepicker__year-dropdown:hover {
+    background-color: #f8f9fa;
+}
+
+.custom-calendar .react-datepicker__month-option:hover,
+.custom-calendar .react-datepicker__year-option:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-header select {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select option {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
