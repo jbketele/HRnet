@@ -4,7 +4,7 @@ import '../assets/app.css';
 import useEmployeeStore from '../store/useEmployeeStore';
 import Dropdown from '../components/Dropdown';
 import DatePicker from '../components/DatePicker';
-import Modal from '../components/Modal';
+import Modal from 'hrnet-modal';
 import stateOptions from '../data/states'; // Importer les états
 
 function CreateEmployee() {

@@ -1,3 +1,6 @@
 [submodule "HRnet_jquery"]
 	path = HRnet_jquery
 	url = https://github.com/jbketele/HRnet_jquery.git
+[submodule "HRnet_modal"]
+	path = HRnet_modal
+	url = https://github.com/jbketele/HRnet_modal.git
